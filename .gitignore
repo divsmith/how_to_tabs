@@ -1,4 +1,12 @@
+# PHPStorm
 .idea/workspace.xml
+
+# Mac OSX
 .DS_Store
+
+# Sublime Text
 How-To-Tabs.sublime-project
 How-To-Tabs.sublime-workspace
+
+# npm
+node_modules/**/.bin/
