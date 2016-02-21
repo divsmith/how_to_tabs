@@ -10,3 +10,6 @@ How-To-Tabs.sublime-workspace
 
 # npm
 node_modules/**/.bin/
+
+# Karma binaries
+node_modules/fsevents/lib/
