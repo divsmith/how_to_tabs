@@ -45,7 +45,7 @@
 			fail("Incorrect Node version: expected " + expectedVersion + ", but was " + actualVersion);
 		}
 	});
-
+ 
 	desc("Lint Javascript code");	
 	task("lint", function() {
 		process.stdout.write("Linting Javascript: ");
@@ -63,7 +63,11 @@
 		console.log('Testing Javascript:');
 
 		karma.run({
-			configFile: KARMA_CONFIG
+			configFile: KARMA_CONFIG,
+			expectedBrowsers: [
+				'Chrome 48.0.2564 (Mac OS X 10.11.3)',
+				'Firefox 43.0.0 (Mac OS X 10.11.0)'
+			]
 		}, complete, fail);
 	}, { async: true });
 
